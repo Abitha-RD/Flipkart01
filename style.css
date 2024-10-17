@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://thearcweb.com/_next/image?url=https%3A%2F%2Fstatic.thearcweb.com%2Fimages%2FPROD%2FPROD-e2af5c82-87e0-4514-97b8-b303ac1220eb.jpeg%3Fw%3D90%26q%3D75&w=640&q=100'); /* Set your background image path here */
+}
+
+header {
+    background-color: #2874f0;
+    color: rgb(102, 80, 228);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 400px;
+    border-radius: 4px;
+    border:color(srgb rgb(0, 0, 0) rgb(8, 8, 8) rgb(4, 4, 5));
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.user-actions a {
+    color: rgb(216, 57, 57);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+nav {
+    background-color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.icon-menu {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.icon-menu li {
+    text-align: center;
+    width: 80px;
+}
+
+.icon-menu li img {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.icon-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    display: block;
+}
+
+.banner-slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.banner {
+    display: none;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.products-section {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.products-section h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: rgb(236, 225, 225);
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #2874f0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.auth-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.submit-btn {
+    padding: 10px;
+    background-color: #2874f0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.submit-btn:hover {
+    background-color: #155bb5;
+}
+
+p {
+    margin-top: 20px;
+}
+
+p a {
+    color: #2874f0;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    color: #333; /* Text color */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff; /* Header background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-actions a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #2874f0; /* Link color */
+}
+
+.auth-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.submit-btn {
+    padding: 10px;
+    background-color: #2874f0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.submit-btn:hover {
+    background-color: #155bb5;
+}
+
+p {
+    margin-top: 20px;
+}
+
+p a {
+    color: #2874f0;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+
