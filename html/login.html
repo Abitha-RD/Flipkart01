@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Flipkart Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-background"> <!-- Updated body tag -->
+
+    <header>
+        <div class="header-container">
+            <div class="logo">Flipkart</div>
+            <div class="user-actions">
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </div>
+    </header>
+    <script defer src="login.js"></script>
+
+    <script>
+        const loginForm = document.querySelector('.form-container');
+        loginForm.onsubmit = function (e) {
+            e.preventDefault(); // Prevent default form submission
+            const email = document.getElementById('email').value;
+            // For demo purposes, we assume the user is logged in successfully
+            sessionStorage.setItem('user', JSON.stringify({ email })); // Store email in session storage
+            window.location.href = 'home.html'; // Redirect to home page
+        };
+    </script>
+    
+
+    <section class="auth-form">
+        <h2>Login</h2>
+        <form action="#" method="POST" class="form-container">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="submit-btn">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+    </section>
+</body>
+</html>
+
